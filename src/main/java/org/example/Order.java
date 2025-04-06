@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
-    Long ID;
+    String ID;
     int amount;
     String Statut;
-    public Order(Long ID, int amount) {
+    public Order(String ID, int amount) {
         this.ID = ID;
         this.amount = amount;
         Statut = "new";
