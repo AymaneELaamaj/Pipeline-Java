@@ -8,7 +8,7 @@ public class Payment implements OrderProcessing {
             System.out.println("Payment Proccesed "+order);
         }else {
             order.Statut="Failed";
-            System.out.println("Payment Proccesed "+order);
+            System.out.println("Payment Failed "+order);
         }
         return order;
     }
