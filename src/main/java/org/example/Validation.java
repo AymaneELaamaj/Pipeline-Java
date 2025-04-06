@@ -6,7 +6,13 @@ public class Validation implements OrderProcessing{
     public Order process(Order order) {
         if (order.amount==0){
             order.Statut="Invalid";
-            return order;
+            System.out.println("Order Invalid "+order);
+        }
+        else {
+            order.Statut="Valid";
+            System.out.println("Order Valid "+order);
+
+
         }
         return order;
     }
